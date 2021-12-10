@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- bootstrap link up -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        .book-card {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="container">
+        <h1 class="text-center my-5">Welcome Book Archive</h1>
+    </header>
+
+    <!-- main  -->
+    <main class="container">
+
+        <!-- serch area -->
+        <div class="d-flex justify-content-center my-3">
+            <div class="input-group w-50">
+                <input id="input-search" placeholder="Search book" value="" class="form-control" />
+                <span class="input-group-text">
+                    <button onclick="SearchBook()" title="Book Search" type="button" class="btn btn-primary btn-sm"><i
+                            class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </div>
+
+        <!-- Result view -->
+        <div>
+            <h4 class="text-center mb-5" id="search-result">Result found: 0, Result view: 0</h4>
+        </div>
+
+        <!-- main result view -->
+        <div class="row justify-content-between g-4 row-cols-4" id="book-result">
+            <!--  <div class="card p-2 book-card">
+                <img src="https://covers.openlibrary.org/b/id/554106-M.jpg" class="img-fluid" style="height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Book Name: Javascrpt</h5>
+                    <p class="card-text">Author: Abcd</p>
+                    <p class="card-text">Publisher: Abcd</p>
+                    <p class="card-text">First publish: Abcd</p>
+                </div>
+            </div> -->
+        </div>
+
+    </main>
+    <!-- script add -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- custom js link -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
